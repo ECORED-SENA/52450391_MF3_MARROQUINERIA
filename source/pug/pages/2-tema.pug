@@ -1,3 +1,130 @@
 include ../mixins/functions
 
-+pageHeader('Titulo del Tema 2', 'assets/images/header/header_media.svg')
++pageHeader('Transformación de diseños en marroquinería.', 'assets/images/header/header_media.svg')
+
+.container
+
+    .header-ecored
+
+        h1 1. Moldería.
+    
+    .row
+
+        .col
+
+            p Es el proceso en el cual se desarrollan los diferentes moldes para poder materializar un producto. En marroquinería los moldes se deben trabajar con trazos y medidas exactas para que el artículo sea acorde al diseño y estos se pueden realizar de manera digital o manual. En el material de formación se trabajará el desarrollo de los moldes de manera manual.
+    
+    .header-ecored
+
+        h2 1.1 Partes de los bolsos.
+
+    .row
+
+        .col
+
+            p Para iniciar con el desarrollo de los moldes es importante reconocer las partes que componen el producto.
+
+.row.my-5.justify-content-center.align-items-center(style="background-color:#E3DAC6")
+
+    .container
+
+        .row.justify-content-md-center.my-5
+
+            .col-10
+
+                p.text-center(style="margin-bottom: 0px; font-size: 25px")
+
+                    strong El bolso presenta diferentes partes en su elaboración, estas pueden ser visibles o no según el diseño.
+
+.container
+
+    .row.justify-content-md-center
+
+        .col-10
+
+            p.text-center
+                
+                img(src="assets/images/ilustraciones/MF3-AUD-IMA-02.svg", style="max-width: 70%").img-fluid
+            
+            #accordionExample.accordion
+
+                .card
+                    #headingOne.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                | 1. Frente
+                    #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                        .card-body
+                            |   Es la parte frontal del artículo, el corte de esta pieza se debe realizar sobre la mejor parte del material ya que es la que queda visible.
+        
+                .card
+                    #headingTwo.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                | 2. Espaldar
+                    #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+                        .card-body
+                            | Es la pieza opuesta al frente, por lo general es quien queda contra el cuerpo del usuario.
+                
+                .card
+                    #headingThree.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                | 3. Base
+                    #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | Pieza que queda debajo del producto, es poco visible por lo cual el corte de ésta se puede realizar en partes defectuosas de la piel.
+
+                .card
+                    #headingFour.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseThree')
+                                | 4. Fuelle y/o escudo lateral
+                    #collapseFour.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | son piezas que se ubican en sentido lateral del bolso. Ésta es quien genera el volumen del bolso dependiendo el diseño (no todos los bolsos presentan escudo lateral o fuelle).
+
+                .card
+                    #headingFive.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseFive', aria-expanded='false', aria-controls='collapseThree')
+                                | 5. Tapa
+                    #collapseFive.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | Pieza que se ubica en la parte superior del bolso y se une a su espaldar. El diseño del artículo es el que define si lleva tapa o no.
+
+                .card
+                    #headingSix.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSix', aria-expanded='false', aria-controls='collapseThree')
+                                | 6. Porta cierre o falso interno
+                    #collapseSix.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | Pieza que lleva el cierre del bolso. Por lo general, se presenta en la parte superior del mismo.
+
+                .card
+                    #headingSeven.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseSeven', aria-expanded='false', aria-controls='collapseThree')
+                                | 7. Correa o manija
+                    #collapseSeven.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | permite agarrar el bolso. Su largo y forma lo define el diseño del producto.
+
+                .card
+                    #headingEight.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseEight', aria-expanded='false', aria-controls='collapseThree')
+                                | 8. Forro
+                    #collapseEight.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | Es opcional dependiendo el diseño del artículo y puede ir suelto o adherido. Hace parte de las piezas internas del bolso, las cuales no son visibles para el usuario.
+
+                .card
+                    #headingNine.card-header
+                        p(style="margin-top: 1rem")
+                            button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseNine', aria-expanded='false', aria-controls='collapseThree')
+                                | 9. Bolsillo interno
+                    #collapseNine.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+                        .card-body
+                            | Es un compartimiento del bolso que se encuentra en la parte interior, permite guardar elementos de manera organizada, brindando comodidad al usuario.

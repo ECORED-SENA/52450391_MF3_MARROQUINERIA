@@ -7,19 +7,18 @@ mixin pageHeader(tituloTema, srcImagen)
 
                 .col-12.col-lg-6
 
-                    h3#curso-titulo-componente.curso-subtitulo Nombre del componente formativo
+                    h3#curso-titulo-componente.curso-subtitulo Diseño y patronaje de complementos (marroquinería)
                     h1#curso-titulo-tema.curso-titulo= tituloTema
 
                     .brand-line-primary
 
                     .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #keyword1
-                        span.badge.badge-pill.badge-light.mr-2 #keyword2
-                        span.badge.badge-pill.badge-light.mr-2 #keyword3
+                        span.badge.badge-pill.badge-light.mr-2 #Diseño
+                        span.badge.badge-pill.badge-light.mr-2 #Moldes
+                        span.badge.badge-pill.badge-light.mr-2 #Patrón
 
                     .barra-dots.mt-5
                         img.img-fluid(src='../assets/images/header/icon_dots.svg', alt='alt')
-
 
                 .col-12.col-lg-6
                     .d-none.d-lg-block
@@ -37,8 +36,7 @@ mixin navTemaItem(numero, titulo, ruta)
             .col-auto                                            
                 a(href= ruta).btn.btn-light.nav-tema-item__btn
                     | Ver más
-    
-    
+
 mixin creditosFooter(ruta)
     footer#creditos.footer
         .container
@@ -70,7 +68,6 @@ mixin creditosFooter(ruta)
                         br
                         span.text-small Ubicación
 
-                        
                 .col-12.col-md-5
                     h3.footer-subtitulo Diseño y desarrollo de recursos educativos digitales
 
@@ -103,7 +100,7 @@ mixin creditosFooter(ruta)
             .d-flex.flex-column.flex-sm-row
                 span.pr-3
                     i.icon.cc
-            
+
                 span
                     | Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que
                     | el trabajo original.
